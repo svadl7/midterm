@@ -1,0 +1,836 @@
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('https://res.cloudinary.com/teepublic/image/private/s--NBGlAe97--/t_Preview/b_rgb:191919,c_limit,f_jpg,h_630,q_90,w_630/v1489819283/production/designs/1332791_1.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container{
+    display: grid;
+    height:200vh;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.4fr 2.5fr 1fr 1fr 1fr 1fr 0.5fr;
+    grid-template-areas: 
+    "mainmenu mainmenu"
+    "image image"
+    "aboutme aboutme"
+    "mywork  achievements"
+    "papers papers"
+    "hobbies blogs"
+    "foot foot";
+    grid-gap: 10px;
+    padding:5px;
+    margin:5px;
+
+}
+.mainmenu{
+    background-color: rgba(104, 98, 98, 0.9);
+    grid-area:mainmenu;
+    display: flex;
+    flex-direction: row;
+}
+.link{
+    color:#fffff0;
+    text-decoration: none;
+    padding:10px;
+    font-size: 15px;
+    text-align: center;
+    border-radius: 5px;
+
+}
+.link:hover{
+    background-color: grey;
+    font-family: cursive;
+}
+.name{
+    color:goldenrod;
+    width:50%;
+    padding:10px;
+    font-size: 25px;
+    text-align:left;
+}
+.name:hover{
+    color:grey;
+}
+.menu{
+    width:50%;
+    text-align:right;
+    padding:10px;
+}
+.aboutme{
+    font-size: 19px;
+    text-align: center;
+    color:white;
+    background-color: rgba(104, 98, 98, 0.9);
+    grid-area: aboutme;
+    border-radius: 20px;
+    box-shadow: 0 0 0 2px rgb(97, 84, 11);
+}
+.aboutme h2{
+    color:gold;
+
+}
+.mywork {
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    position: relative;
+    margin: auto;
+    color:white;
+    font-size: 20px;
+    background-color: rgba(104, 98, 98, 0.9);
+    grid-area: mywork;
+    border-radius: 20px;
+    box-shadow: 0 0 0 2px rgb(97, 84, 11);
+
+}
+.mywork h2{
+    color:gold;
+    text-align: center;
+
+}
+.photo{
+    text-align: center;
+}
+.theory{
+    text-align: center;
+}
+
+.work1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.work1 img{
+    height:50%;
+    padding-left: 200px;
+    width:50%;
+}
+.work2 img{
+    height:50%;
+    padding-left: 200px;
+    width:50%;
+}
+
+.work3 img{
+    height:50%;
+    padding-left: 200px;
+    width:50%;
+
+}
+.work.theory{
+    max-width: 50%; 
+}
+.work {
+    display: none;
+}
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  .prev:hover{
+    background-color: burlywood;
+  }
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  .next:hover{
+    background-color: burlywood;
+  }
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+
+.work1 .relativity {
+    margin-right: 20px;
+}
+.workimg{
+    margin-top: 45px;
+}
+
+.image{
+    height:600px;
+    grid-area: image;
+    
+}
+.img{
+    height:100%;
+    width:100%;
+    object-fit: cover;
+}
+
+
+
+.achievements{
+    align-items: center;
+    position: relative;
+    margin: auto;
+    color:white;
+    font-size: 20px;
+    background-color: rgba(104, 98, 98, 0.9);
+    grid-area: achievements;
+    border-radius: 20px;
+    box-shadow: 0 0 0 2px rgb(97, 84, 11);
+}
+.achievements h2{
+    color:gold;
+    text-align: center;
+    
+}
+.prevach, .nextach {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  .prevach:hover{
+   background-color: burlywood;
+  }
+  .nextach {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  .nextach:hover{
+    background-color: burlywood;
+
+  }
+  .dotach {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .activeach, .dotach:hover {
+    background-color: #717171;
+  }
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+.papers{
+    text-align: center;
+    color:white;
+    background-color: rgba(104, 98, 98, 0.9);
+    grid-area:papers;
+    border-radius: 20px;
+    box-shadow: 0 0 0 2px rgb(97, 84, 11);
+
+}
+.papers h2{
+    color:gold;
+}
+.pap{
+    color:gold;
+    text-decoration: none;
+    text-align: center;
+}
+.pap:hover{
+    background-color: burlywood;
+    color:black;
+    font-family: cursive;
+}
+.hobbies{
+    text-align: center;
+    color:white;
+    font-size: 18px;
+    background-color: rgba(104, 98, 98, 0.9);
+    grid-area: hobbies;
+    box-shadow: 0 0 0 2px rgb(97, 84, 11);
+    border-radius: 20px;
+}
+.hobbies h2{
+    color:gold;
+}
+.blogs{
+    text-align: center;
+    background-color: rgba(104, 98, 98, 0.9);
+    grid-area: blogs;
+    border-radius: 20px;
+    box-shadow: 0 0 0 2px rgb(97, 84, 11);
+    border-color: gold;
+}
+.blogs h2{
+    color:gold;
+}
+.blogs a{
+    color:white;
+    text-decoration: none;
+}
+.blogs a:hover{
+    background-color: burlywood;
+    color:black;
+    font-family: cursive;
+}
+.superscript {
+    vertical-align: super;
+    font-size: smaller;
+}
+.achievement1 {
+    text-align: center;
+    align-items: center;
+    margin:50px;
+}
+
+.achimg {
+    height:300px;
+    width: 300px; 
+    padding-left: 100px;
+    padding-right: 100px;
+
+}
+
+
+.achievement2 {
+    text-align: center;
+    align-items: center;
+    margin:50px;
+}
+.achievement3{
+    text-align: center;
+    align-items: center;
+    margin:50px;
+    
+}
+.achievement4{
+    text-align: center;
+    align-items: center;
+    margin:50px;
+    
+}
+.foot{
+    text-align: center;
+   background-color: aquamarine;
+    grid-area: foot;
+}
+.paper1{
+    margin:10px;
+    width:100%;
+    height:50%;
+    box-shadow: 2px 2px 0 0 black;
+    border: 1px solid #000; 
+    text-align: center;
+}
+.paper2{
+    margin:10px;
+    width:100%;
+    height:50%;
+    box-shadow: 2px 2px 0 0 black;
+    border: 1px solid #000; 
+    text-align: center;
+}
+.paper3{
+    margin:10px;
+    width:100%;
+    height:50%;
+    box-shadow: 2px 2px 0 0 black;
+    border: 1px solid #000; 
+    text-align: center;
+
+}
+.paper4{
+    margin:10px;
+    width:100%;
+    height:50%;
+    box-shadow: 2px 2px 0 0 black;
+    border: 1px solid #000; 
+    text-align: center;
+
+}
+.paper5{
+    margin:10px;
+    width:100%;
+    height:50%;
+    box-shadow: 2px 2px 0 0 black;
+    border: 1px solid #000; 
+    text-align: center;
+
+}
+.paper6{
+    margin:10px;
+    width:100%;
+    height:50%;
+    box-shadow: 2px 2px 0 0 black;
+    border: 1px solid #000; 
+    text-align: center;
+
+}
+.papers{
+    display:inline-block;
+}
+.column1, .column2 ,.column3{
+    float: left;
+    width: 33%; 
+    box-sizing: border-box;
+    padding: 10px; 
+}
+
+#return-to-top {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    font-size: 30px;
+    line-height: 40px;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+  
+  #return-to-top:hover {
+    background:orange;
+  }
+  .mobile-menu{
+    display:none;
+  }
+  .hamburger{
+    display:none;
+  }
+  
+      
+  
+@media only screen and (max-width:600px)
+{
+    .container{
+        display:grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.4fr 3fr  1fr 1fr 1fr 2fr 1fr 1fr 0.2fr;
+        grid-template-areas: 
+        "mainmenu"
+        "image"
+        "aboutme"
+        "mywork"
+        "achievements"
+        "papers"
+        "hobbies"
+        "blogs"
+        "footer";
+       
+    }
+    body {
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        background-image: url('https://res.cloudinary.com/teepublic/image/private/s--NBGlAe97--/t_Preview/b_rgb:191919,c_limit,f_jpg,h_630,q_90,w_630/v1489819283/production/designs/1332791_1.jpg');
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center center;
+    }
+    .mainmenu {
+        justify-content: flex-start;
+      }
+      .mainmenu .hamburger{
+        text-align: right;
+      }
+      .name{
+        padding-left:150px;
+      }
+    
+      .menu {
+        display: none;
+      }
+      .hamburger{
+        position: relative;
+        display:block;
+        width:35px;
+        cursor:pointer;
+        appearance: none;
+        background: none;
+        outline: none;
+        border: none;
+      }
+      .hamburger .bar,.hamburger:after,.hamburger:before{
+        content: '';
+        display:block;
+        width:100%;
+        background-color: white;
+        height:3px;
+        margin:6px 0px;
+        transition: 0.4s;
+    
+      }
+      .hamburger.is-active:before{
+        transform: rotate(-45deg) translate(-5px,6px);
+    
+      }
+      .hamburger.is-active:after{
+        transform: rotate(45deg) translate(-6px,-8px);
+    
+      }
+      .hamburger.is-active .bar{
+       opacity: 0;
+    
+      }
+      .mobile-menu{
+        display: block;
+        position: fixed;
+        top:10%;
+        left:100%;
+        width:400px;
+        height:200px;
+        z-index: 98;
+        background-color:rgba(0, 0, 0, 0.7) ;
+        transition: 0.4s;
+        
+    }
+    .mobile-menu.is-active{
+        left:0;
+    
+    }
+    .mobile-menu a{
+        display:block;
+        text-align:center;
+        margin-bottom: 5px;
+        padding:5px;
+        background-color: black;
+        color:gold ;
+    
+    }
+    
+    .aboutme{
+        background-color: rgba(104, 98, 98, 0.9);
+        text-align: center;
+        grid-area: aboutme;
+    }
+    .work1 .relativity {
+        margin-right: 20px;
+    }
+    .workimg{
+        height:100px;
+        width:100px;
+    }
+    .image{
+        height:400px;
+        grid-area: image;
+        
+    }
+    .img{
+        height:100%;
+        width:100%;
+        object-fit: cover;
+    }
+
+    .aboutme{
+        background-color: rgba(104, 98, 98, 0.9);
+        grid-area: aboutme;
+    }
+    .mywork{
+        background-color: rgba(104, 98, 98, 0.9);
+        grid-area: mywork;
+    
+    }
+    .achievements{
+        align-items: center;
+        position: relative;
+        margin: auto;
+    }
+    .achievements{
+        background-color: rgba(104, 98, 98, 0.9);
+        grid-area: achievements;
+    }
+    .prevach, .nextach {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        margin-top: -22px;
+        padding: 16px;
+        color: black;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+      }
+      .nextach {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+      }
+      .prevach {
+        left: 0;
+        border-radius: 3px 0 0 3px;
+      }
+      .dotach {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+      }
+      
+      .activeach, .dotach:hover {
+        background-color: #717171;
+      }
+      
+      .fade {
+        animation-name: fade;
+        animation-duration: 1.5s;
+      }
+      
+      @keyframes fade {
+        from {opacity: .4}
+        to {opacity: 1}
+      }
+    .papers{
+        background-color: rgba(104, 98, 98, 0.9);
+        grid-area:papers;
+    
+    }
+    .hobbies{
+        text-align: center;
+        background-color: rgba(104, 98, 98, 0.9);
+        grid-area: hobbies;
+    }
+    .blogs{
+        text-align: center;
+        background-color: rgba(104, 98, 98, 0.9);
+        grid-area: blogs;
+    }
+    .superscript {
+        vertical-align: super;
+        font-size: smaller;
+    }
+    .achievement1 {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        margin:50px;
+    }
+    
+    .achimg {
+        height:200px;
+        width: 200px;
+        padding-left: 100px;
+        padding-right: 100px;
+    
+    }
+    .mywork {
+        align-items: center;
+        justify-content: space-between;
+        box-sizing: border-box;
+        position: relative;
+        margin: auto;
+    }
+    .photo{
+        text-align: center;
+    }
+    .theory{
+        text-align: center;
+    }
+    
+    .work1 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .work1 img{
+        height:50%;
+        padding-left: 20px;
+        width:50%;
+    }
+    .work2 img{
+        height:50%;
+        padding-left: 20px;
+        width:50%;
+    }
+    
+    .work3 img{
+        height:50%;
+        padding-left: 20px;
+        width:50%;
+    
+    }
+    .work.theory{
+        max-width: 50%; 
+    }
+    .work {
+        display: none;
+    }
+    .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        margin-top: -22px;
+        padding: 16px;
+        color: black;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+      }
+      .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+      }
+      .prev {
+        left: 0;
+        border-radius: 3px 0 0 3px;
+      }
+      .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+      }
+      
+      
+      .active, .dot:hover {
+        background-color: #717171;
+      }
+      
+      .fade {
+        animation-name: fade;
+        animation-duration: 1.5s;
+      }
+      
+      @keyframes fade {
+        from {opacity: .4}
+        to {opacity: 1}
+      }
+      
+    
+    .work1 .relativity {
+        margin-right: 20px;
+    }
+    .workimg{
+        height:120px;
+        width:120px;
+    }
+    .column1, .column2 ,.column3{
+        width: 100%;
+        padding-left: 10px;
+    }
+    .paper1{
+        margin:10px;
+        width:80%;
+        height:50%;
+        box-shadow: 2px 2px 0 0 black;
+        border: 1px solid #000; 
+        text-align: center;
+        margin-left: 40px;
+    }
+    .paper2{
+        margin:10px;
+        width:80%;
+        height:50%;
+        box-shadow: 2px 2px 0 0 black;
+        border: 1px solid #000; 
+        text-align: center;
+        margin-left: 40px;
+    }
+    .paper3{
+        margin:10px;
+        width:80%;
+        height:50%;
+        box-shadow: 2px 2px 0 0 black;
+        border: 1px solid #000; 
+        text-align: center;
+        margin-left: 40px;
+    
+    }
+    .paper4{
+        margin:10px;
+        width:80%;
+        height:50%;
+        box-shadow: 2px 2px 0 0 black;
+        border: 1px solid #000; 
+        text-align: center;
+        margin-left: 40px;
+    
+    }
+    .paper5{
+        margin:10px;
+        width:80%;
+        height:50%;
+        box-shadow: 2px 2px 0 0 black;
+        border: 1px solid #000; 
+        text-align: center;
+        margin-left: 40px;
+    
+    }
+    .paper6{
+        margin:10px;
+        width:80%;
+        height:50%;
+        box-shadow: 2px 2px 0 0 black;
+        border: 1px solid #000; 
+        text-align: center;
+        margin-left: 40px;
+    
+    }
+    .foot{
+        width:100%;
+        grid-area: footer;
+        text-align: center;
+    }
+
+    
+
+}
+
