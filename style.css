@@ -61,6 +61,9 @@ body {
     text-align:right;
     padding:10px;
 }
+.mobileimage{
+    display:none;
+}
 .aboutme{
     font-size: 19px;
     text-align: center;
@@ -446,7 +449,7 @@ body {
   
       
   
-@media only screen and (max-width:600px)
+@media only screen and (max-width:500px)
 {
     .container{
         display:grid;
@@ -470,6 +473,7 @@ body {
         padding: 0;
         background-image: url('https://res.cloudinary.com/teepublic/image/private/s--NBGlAe97--/t_Preview/b_rgb:191919,c_limit,f_jpg,h_630,q_90,w_630/v1489819283/production/designs/1332791_1.jpg');
         background-size: cover;
+        background-repeat: no-repeat;
         background-attachment: fixed;
         background-position: center center;
     }
