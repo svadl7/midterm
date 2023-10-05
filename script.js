@@ -11,27 +11,27 @@ document.querySelectorAll(".link").forEach(n=>n.addEventListener("click",()=>{
 }))
 
 //script for slider my work
-let slideIndex = 1;
-showSlides(slideIndex);
+let slide_index = 1;
+showwork(slide_index);
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
+function pluswork(n) {
+  showwork(slide_index += n);
 }
 
-function currentSlide(n) {
-  showSlides(slideIndex = n);
+function currentwork(n) {
+  showwork(slide_index = n);
 }
-function showSlides(n) {
+function showwork(n) {
   let i;
   let slides = document.getElementsByClassName("work");
   let dots = document.getElementsByClassName("dot");
   
   if (n > slides.length) {
-    slideIndex = 1;
+    slide_index = 1;
   }
   
   if (n < 1) {
-    slideIndex = slides.length;
+    slide_index = slides.length;
   }
   
   for (i = 0; i < slides.length; i++) {
@@ -42,8 +42,8 @@ function showSlides(n) {
     dots[i].className = dots[i].className.replace(" active", "");
   }
   
-  slides[slideIndex - 1].style.display = "block";
-  dots[slideIndex - 1].className += " active";
+  slides[slide_index - 1].style.display = "block";
+  dots[slide_index - 1].className += " active";
 }
 
 //script for achievemnets slider
@@ -88,7 +88,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const returnButton = document.getElementById('return-to-top');
 
   window.addEventListener('scroll', () => {
-    if (window.pageYOffset > 100) {
+    if (window.pageYOffset > 150) {
       returnButton.style.display = 'block';
     } else {
       returnButton.style.display = 'none';
